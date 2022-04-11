@@ -53,6 +53,7 @@ jobs:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   docker:
+    needs: build 
     runs-on: ubuntu-latest
     steps:
       -
